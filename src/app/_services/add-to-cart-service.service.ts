@@ -14,8 +14,8 @@ export class AddToCartServiceService {
 
 
 
-  public viewProductsFromCart(){
-    return this.http.get(this.cartURL+"/viewProductsFromCart");
+  public viewProductsFromCart(userId){
+    return this.http.get(this.cartURL+"/viewProductsFromCart?userId="+userId);
   }
 
   public removeItemFromCart(productId,userId){

@@ -27,6 +27,7 @@ export class CartComponent implements OnInit {
     if (!this.isLoggedIn) {
       this.router.navigate(["/auth"]);
     }
+    
     else{
       const user = this.tokenStorageService.getUser();
       this.roles = user.roles;
@@ -37,7 +38,7 @@ export class CartComponent implements OnInit {
     }
     
     this.nav.hide();
-    let list = this.service.viewProductsFromCart();
+    let list = this.service.viewProductsFromCart(this.userId);
     list.subscribe((data) => this.products=data);
   }
 

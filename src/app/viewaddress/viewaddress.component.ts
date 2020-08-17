@@ -46,7 +46,7 @@ export class ViewaddressComponent implements OnInit {
     }
     
     
-    let list = this.addressService.viewAllAddress();
+    let list = this.addressService.viewAllAddress(this.userId);
     list.subscribe((data) => this.addressList=data);
     
   }

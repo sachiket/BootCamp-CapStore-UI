@@ -78,7 +78,8 @@ export class AuthComponent implements OnInit {
       err => {
         this.errorMessage = err.error.message;
         this.isSignUpFailed = true;
-        if(this.errorMessage===null){
+        console.log(this.errorMessage)
+        if(this.errorMessage===undefined){
           this.notificationService.showInfo(this.errorMessage,"Please verify your email!!")
         }
         else{

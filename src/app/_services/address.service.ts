@@ -9,8 +9,8 @@ export class AddressService {
   addressURL:String = "http://localhost:8580/address";
   constructor(private http:HttpClient) { }
 
-  public viewAllAddress(){
-    return this.http.get(this.addressURL+"/viewALLAddress");
+  public viewAllAddress(userId){
+    return this.http.get(this.addressURL+"/viewALLAddress?userId="+userId);
   }
 
   async addAddress(address:Address)
