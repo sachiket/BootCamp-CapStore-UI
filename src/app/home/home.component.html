@@ -1,0 +1,317 @@
+<div class="row">
+    <div class="col-lg-12 btn btn-dark"><a href="https://www.covid19india.org/" class="text-white"> Get The Latest Updates On COVID 19 </a></div>
+</div>
+<br>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
+    <!-- https://dty8d8u6se0an.cloudfront.net/media/image/thumbnail/Welcher-Kleister-fuer-welche-Tapete_1440x1100.jpg -->
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i.imgur.com/Zwb2Gtr.jpg" alt="Mountain" class="center">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.gooutdoors.co.uk/templates/gooutdoors.co.uk/_uploads/200511-15-Camping/200511-15-Camping-laptop.jpg?v=84" alt="CouponCode" class="center2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.gooutdoors.co.uk/templates/gooutdoors.co.uk/_uploads/200501-FestivalBanner/200501-FestivalBanner-laptop.jpg?v=83" alt="Offer" class="center2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://dty8d8u6se0an.cloudfront.net/media/image/thumbnail/Welcher-Kleister-fuer-welche-Tapete_1440x1100.jpg" alt="Others" class="center">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+<br>
+<br>
+
+<div class="row">
+
+    <!-- img2 -->
+
+    <div class="column" *ngIf="!isLoggedIn">
+        <a href="auth" *ngIf="!isLoggedIn">
+            <img src="assets/img/golf.jpg"
+                alt="Golf" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Golf Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="column" *ngIf="isLoggedIn && !isRetailer">
+        <a href="user" *ngIf="isLoggedIn && !isRetailer">
+            <img src="assets/img/golf.jpg"
+                alt="Golf" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Golf Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="column" *ngIf="isRetailer">
+        <a href="retailer" *ngIf="isRetailer">
+            <img src="assets/img/golf.jpg"
+                alt="Golf" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Golf Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- img2 -->
+
+
+    <!-- img3 -->
+
+    <div class="column" *ngIf="!isLoggedIn">
+        <a href="auth" *ngIf="!isLoggedIn">
+            <img src="https://mk0travelawayrru2xew.kinstacdn.com/wp-content/uploads/2016/04/core-cabin-tent.jpg" alt="Camping" class="image">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Camping Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="column" *ngIf="isLoggedIn && !isRetailer">
+        <a href="user" *ngIf="isLoggedIn && !isRetailer">
+            <img src="https://mk0travelawayrru2xew.kinstacdn.com/wp-content/uploads/2016/04/core-cabin-tent.jpg" alt="Camping" class="image">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Camping Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="column" *ngIf="isRetailer">
+        <a href="retailer" *ngIf="isRetailer">
+            <img src="https://mk0travelawayrru2xew.kinstacdn.com/wp-content/uploads/2016/04/core-cabin-tent.jpg" alt="Camping" class="image">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Camping Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <!-- img3 -->
+
+    <!--img 1 -->
+    <!-- https://mk0travelawayrru2xew.kinstacdn.com/wp-content/uploads/2016/04/hiking-backpack.jpg -->
+    <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSynf0Rpf-8NWxOWycOM3TscXDqmwV1R3YT0uXTo3d4nFVJV9VQ&usqp=CAU -->
+
+    <div class="column" *ngIf="!isLoggedIn">
+        <a href="auth" *ngIf="!isLoggedIn">
+            <img src="https://mk0travelawayrru2xew.kinstacdn.com/wp-content/uploads/2016/04/hiking-backpack.jpg" alt="Mountains" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Mountaineering Items</h3>
+
+                </div>
+
+            </div>
+        </a>
+    </div>
+
+
+
+    <div class="column" *ngIf="isLoggedIn && !isRetailer">
+        <a href="user" *ngIf="isLoggedIn && !isRetailer"> <img src="https://mk0travelawayrru2xew.kinstacdn.com/wp-content/uploads/2016/04/hiking-backpack.jpg" alt="Mountains" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Mountaineering Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="column" *ngIf="isRetailer">
+        <a href="retailer" *ngIf="isRetailer"> <img src="https://mk0travelawayrru2xew.kinstacdn.com/wp-content/uploads/2016/04/hiking-backpack.jpg" alt="Mountains" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Mountaineering Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--img 1 -->
+
+
+
+</div>
+<br>
+<br>
+
+<div class="row">
+
+
+
+
+    <!--img 4 -->
+    <div class="column" *ngIf="!isLoggedIn">
+        <a href="auth" *ngIf="!isLoggedIn">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/images1/HD-best-antique-wallpapers.jpg" alt="Outdoor" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Outdoor Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="column" *ngIf="isLoggedIn && !isRetailer">
+        <a href="user" *ngIf="isLoggedIn && !isRetailer">
+            <img src="https://gearpatrol.com/wp-content/uploads/2018/05/Best-Totes-of-Summer-gear-patrol-full-lead.jpg" alt="Outdoor" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Outdoor Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="column" *ngIf="isRetailer">
+        <a href="retailer" *ngIf="isRetailer">
+            <img src="https://gearpatrol.com/wp-content/uploads/2018/05/Best-Totes-of-Summer-gear-patrol-full-lead.jpg" alt="Outdoor" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Outdoor Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--img 4 -->
+
+
+
+    <!--img 5 -->
+
+    <div class="column" *ngIf="!isLoggedIn">
+        <a href="auth" *ngIf="!isLoggedIn">
+            <img src="https://www.nuraphone.com/cdn/5b2c8a9fa49e8e2d4604e60b/5b4c1f5ebd74202771f111a2_home_fifth_desktop_2x_opt.jpg" alt="Personal" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Personal Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="column" *ngIf="isLoggedIn && !isRetailer">
+        <a href="user" *ngIf="isLoggedIn && !isRetailer">
+            <img src="https://www.nuraphone.com/cdn/5b2c8a9fa49e8e2d4604e60b/5b4c1f5ebd74202771f111a2_home_fifth_desktop_2x_opt.jpg" alt="Personal" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Personal Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="column" *ngIf="isRetailer">
+        <a href="retailer" *ngIf="isRetailer">
+            <img src="https://www.nuraphone.com/cdn/5b2c8a9fa49e8e2d4604e60b/5b4c1f5ebd74202771f111a2_home_fifth_desktop_2x_opt.jpg" alt="Personal" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Personal Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--img 5 -->
+
+
+
+    <!--img 6 -->
+    <div class="column" *ngIf="!isLoggedIn">
+        <a href="auth" *ngIf="!isLoggedIn">
+            <img src="https://www.thespruce.com/thmb/SGpGcojb61h0gt6yNRahvCZFCaU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/patio-deck-184270637-5aa997a4875db90037dc945d.jpg" alt="Others" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Other Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="column" *ngIf="isLoggedIn && !isRetailer">
+        <a href="user" *ngIf="isLoggedIn && !isRetailer">
+            <img src="https://www.thespruce.com/thmb/SGpGcojb61h0gt6yNRahvCZFCaU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/patio-deck-184270637-5aa997a4875db90037dc945d.jpg" alt="Others" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Other Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="retailer" *ngIf="isRetailer">
+            <img src="https://www.thespruce.com/thmb/SGpGcojb61h0gt6yNRahvCZFCaU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/patio-deck-184270637-5aa997a4875db90037dc945d.jpg" alt="Others" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text-block">
+                    <h2><strong><u>SHOP</u></strong></h2>
+                    <h3>Other Items</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--img 6 -->
+
+</div>
+<br>
+<br>
+<footer>
+    <p>Company © ITER_Stalwarts. All rights reserved.</p>
+</footer>

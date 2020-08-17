@@ -1,0 +1,31 @@
+
+
+<div id="viewport" class="bg-img">
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <header>
+        <a href="#">Hello {{retailerName}}</a>
+      </header>
+      <ul class="nav list-group">
+        <li >
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="zmdi zmdi-view-dashboard">Home</i>
+          </a>
+        </li>
+        <li>
+            <a href="master/addproduct" class="list-group-item list-group-item-action">
+              <i class="zmdi zmdi-link">Add product</i>
+            </a>
+          </li>
+        <li >
+            <a href="master/viewproduct" class="list-group-item list-group-item-action">
+              <i class="zmdi zmdi-link">View all products</i> 
+            </a>
+          </li>
+          <li >
+            <a href="#" (click)="logout()" class="list-group-item list-group-item-action">
+              <i class="zmdi zmdi-info-outline">Log out</i> 
+            </a>
+          </li>
+      </ul>
+    </div>
