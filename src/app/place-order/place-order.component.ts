@@ -40,7 +40,7 @@ export class PlaceOrderComponent implements OnInit {
     }
     
     this.nav.hide();
-    let list = this.service.viewProductsFromCart();
+    let list = this.service.viewProductsFromCart(this.userId);
     list.subscribe((data) => this.products=data);
   }
 

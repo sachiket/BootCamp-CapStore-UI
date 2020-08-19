@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { UserService } from 'src/app/_services/user.service';
 import { Product } from 'src/app/models/product.model';
 import { Router } from '@angular/router';
 import { TokenStorageService } from 'src/app/_services/token-storage.service';
 import { NotificationService } from 'src/app/_services/notification.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-addproduct',

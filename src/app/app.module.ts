@@ -34,6 +34,8 @@ import { CustomerProfileComponent } from './customerhomepage/customer-profile/cu
 import { AddmerchantComponent } from './admin-home/addmerchant/addmerchant.component';
 import { ViewmerchantComponent } from './admin-home/viewmerchant/viewmerchant.component';
 import { MerchantHomeComponent } from './merchant-home/merchant-home.component';
+import { ViewproductComponent } from './merchant-home/viewproduct/viewproduct.component';
+import { AddproductComponent } from './merchant-home/addproduct/addproduct.component';
 
 
 
@@ -48,6 +50,8 @@ import { MerchantHomeComponent } from './merchant-home/merchant-home.component';
     HomeComponent,
     AdminHomeComponent,
     WishlistComponent,
+    AddproductComponent,
+    ViewproductComponent,
     PlaceOrderComponent,
     OrderpageComponent,
     OrderdetailComponent,
