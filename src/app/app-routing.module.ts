@@ -2,40 +2,40 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './home/home.component';
-import { ProductMasterHomeComponent } from './product-master-home/product-master-home.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
-import { RetailerhomepageComponent } from './retailerhomepage/retailerhomepage.component';
 import { CartComponent } from './cart/cart.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
-import { AddproductComponent } from './product-master-home/addproduct/addproduct.component';
-import { ViewproductComponent } from './product-master-home/viewproduct/viewproduct.component';
-import { RetailerProfileComponent } from './retailerhomepage/retailer-profile/retailer-profile.component';
-import { RetailerEditProfileComponent } from './retailerhomepage/retailer-edit-profile/retailer-edit-profile.component';
-import { AddproductmasterComponent } from './admin-home/addproductmaster/addproductmaster.component';
-import { ViewproductmasterComponent } from './admin-home/viewproductmaster/viewproductmaster.component';
 import { PlaceOrderComponent } from './place-order/place-order.component';
 import { OrderpageComponent } from './orderpage/orderpage.component';
 import { OrderdetailComponent } from './orderdetail/orderdetail.component';
 import { ViewaddressComponent } from './viewaddress/viewaddress.component';
 import { AddressComponent } from './address/address.component';
 import { CancelorderComponent } from './cancelorder/cancelorder.component';
+import { MerchantHomeComponent } from './merchant-home/merchant-home.component';
+import { CustomerhomepageComponent } from './customerhomepage/customerhomepage.component';
+import { AddproductComponent } from './merchant-home/addproduct/addproduct.component';
+import { ViewproductComponent } from './merchant-home/viewproduct/viewproduct.component';
+import { CustomerProfileComponent } from './customerhomepage/customer-profile/customer-profile.component';
+import { EditProfileComponent } from './customerhomepage/edit-profile/edit-profile.component';
+import { AddmerchantComponent } from './admin-home/addmerchant/addmerchant.component';
+import { ViewmerchantComponent } from './admin-home/viewmerchant/viewmerchant.component';
 
 
 
 const routes: Routes = [
   {path: 'auth',component: AuthComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'master', component: ProductMasterHomeComponent },
+  { path: 'master', component: MerchantHomeComponent },
   { path: 'admin', component: AdminHomeComponent},
-  {path:'retailer' , component: RetailerhomepageComponent},
+  {path:'retailer' , component: CustomerhomepageComponent},
   {path:'cart' , component: CartComponent},
   {path:'wishlist' , component: WishlistComponent},
   {path:'master/addproduct' , component: AddproductComponent},
   {path:'master/viewproduct' , component: ViewproductComponent},
-  {path:'retailer/profile' , component: RetailerProfileComponent},
-  {path:'retailer/edit' , component: RetailerEditProfileComponent},
-  {path:'admin/addproductmaster' , component: AddproductmasterComponent},
-  {path:'admin/viewproductmaster' , component: ViewproductmasterComponent},
+  {path:'retailer/profile' , component: CustomerProfileComponent},
+  {path:'retailer/edit' , component: EditProfileComponent},
+  {path:'admin/addproductmaster' , component: AddmerchantComponent},
+  {path:'admin/viewproductmaster' , component: ViewmerchantComponent},
   {path:'placeorder' , component : PlaceOrderComponent},
   {path:'order' , component: OrderpageComponent},
   {path:'orderdetail' , component: OrderdetailComponent},

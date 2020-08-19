@@ -5,11 +5,11 @@ import { Router } from '@angular/router';
 import { TokenStorageService } from '../_services/token-storage.service';
 
 @Component({
-  selector: 'app-product-master-home',
-  templateUrl: './product-master-home.component.html',
-  styleUrls: ['./product-master-home.component.css']
+  selector: 'app-merchant-home',
+  templateUrl: './merchant-home.component.html',
+  styleUrls: ['./merchant-home.component.css']
 })
-export class ProductMasterHomeComponent implements OnInit {
+export class MerchantHomeComponent implements OnInit {
 
   content = '';
   private roles: string[];
@@ -46,5 +46,4 @@ export class ProductMasterHomeComponent implements OnInit {
     this.tokenStorageService.signOut();
     window.location.reload();
   }
-
 }

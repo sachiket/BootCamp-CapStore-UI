@@ -7,11 +7,12 @@ import { User } from 'src/app/models/user.model';
 import { NotificationService } from 'src/app/_services/notification.service';
 
 @Component({
-  selector: 'app-addproductmaster',
-  templateUrl: './addproductmaster.component.html',
-  styleUrls: ['./addproductmaster.component.css']
+  selector: 'app-addmerchant',
+  templateUrl: './addmerchant.component.html',
+  styleUrls: ['./addmerchant.component.css']
 })
-export class AddproductmasterComponent implements OnInit {
+export class AddmerchantComponent implements OnInit {
+
   isLoggedIn: boolean;
   roles: any;
   user: any;

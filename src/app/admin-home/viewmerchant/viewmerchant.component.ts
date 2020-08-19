@@ -5,13 +5,13 @@ import { Router } from '@angular/router';
 import { UserService } from 'src/app/_services/user.service';
 import { NotificationService } from 'src/app/_services/notification.service';
 
-
 @Component({
-  selector: 'app-viewproductmaster',
-  templateUrl: './viewproductmaster.component.html',
-  styleUrls: ['./viewproductmaster.component.css']
+  selector: 'app-viewmerchant',
+  templateUrl: './viewmerchant.component.html',
+  styleUrls: ['./viewmerchant.component.css']
 })
-export class ViewproductmasterComponent implements OnInit {
+export class ViewmerchantComponent implements OnInit {
+
   productmasters: any;
   isLoggedIn: boolean;
 
@@ -54,5 +54,4 @@ export class ViewproductmasterComponent implements OnInit {
     reloadPage() {
       window.location.reload();
     }
-
 }

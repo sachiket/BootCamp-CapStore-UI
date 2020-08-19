@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { TokenStorageService } from 'src/app/_services/token-storage.service';
 
 @Component({
-  selector: 'app-retailer-profile',
-  templateUrl: './retailer-profile.component.html',
-  styleUrls: ['./retailer-profile.component.css']
+  selector: 'app-customer-profile',
+  templateUrl: './customer-profile.component.html',
+  styleUrls: ['./customer-profile.component.css']
 })
-export class RetailerProfileComponent implements OnInit {
+export class CustomerProfileComponent implements OnInit {
 
   constructor(private router: Router ,private tokenStorageService: TokenStorageService) { }
 

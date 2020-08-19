@@ -11,11 +11,11 @@ import { Wishlist } from '../models/wishlist.model';
 import { NotificationService } from '../_services/notification.service';
 
 @Component({
-  selector: 'app-retailerhomepage',
-  templateUrl: './retailerhomepage.component.html',
-  styleUrls: ['./retailerhomepage.component.css']
+  selector: 'app-customerhomepage',
+  templateUrl: './customerhomepage.component.html',
+  styleUrls: ['./customerhomepage.component.css']
 })
-export class RetailerhomepageComponent implements OnInit {
+export class CustomerhomepageComponent implements OnInit {
 
   private roles: string[];
   isLoggedIn = false;
@@ -106,5 +106,6 @@ export class RetailerhomepageComponent implements OnInit {
        document.getElementsByTagName('head')[0].appendChild(node); 
      
   } 
+
 
 }
